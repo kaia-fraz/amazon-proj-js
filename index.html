@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <header class="flex bg-blue-950 text-white p-5 items-center justify-between">
+            <img src="images/Amazon-Logo-White-PNG-Image.png" alt="Amazon Logo" class="h-14 pr-4">
+            <input type="text" class="w-screen mt-4 p-2 rounded-l-md focus:outline-none flex-grow">
+            <button class="bg-orange-400 text-black mt-4 p-2 rounded-r-md focus:outline-none flex-grow ">Go</button>
+            <nav class="mt-4">
+                <ul class="flex space-x-4 pl-4">
+                    <li><a href="#" class="hover:underline hover:text-orange-400">Your Account</a></li>
+                    <li><a href="#" class="hover:underline hover:text-orange-400">Help</a></li>
+                    <li><a href="#" class="hover:underline hover:text-orange-400">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <body class="bg-gray-100">
+        <div class="bg-orange-400 shadow-md mb-8 p-2">
+            <h1 class="text-4xl font-bold text-center p-8">Welcome to Amazon</h1>
+            <p class="text-lg text-center mb-8">Your one-stop shop for everything you need!</p>
+        </div>
+        <div class="grid grid-cols-4 gap-4 p-4">
+            <div class="border p-4 bg-white rounded-md">
+                <img src="images/11a2517126bd4540965fc5fd285db763~tplv-fhlh96nyum-crop-webp_1785_1785.webp" alt="jeans" class="w-full">
+                <h1 class="text-2xl font-bold underline">Naturally Distressed Jeans</h1>
+                <p class="text-lg">Stylish and comfortable jeans with a naturally distressed finish.</p>
+                <p>$49.99</p>
+                <select id="quantity" name="quantity"></select>
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+            </div>
+            <div class="border p-4 bg-white rounded-md">
+                <img src="images/wooden-wagon-with-sacks-10x15x10-cm0x15x10-cm.jpg" alt="" class="w-full">
+                <h1 class="text-2xl font-bold underline">Wooden Wagon with Sacks</h1>
+                <p class="text-lg">A charming wooden wagon filled with decorative sacks.</p>
+                <p>$29.99</p>
+                <select id="quantity" name="quantity"></select>
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+            </div>
+            <div class="border p-4 bg-white rounded-md">
+                <img src="images/RDKY-Classic-Yellow-Rubber-Duck_web_2000x2000.jpg" alt="" class="w-full">
+                <h1 class="text-2xl font-bold underline">Classic Yellow Rubber Duck</h1>
+                <p class="text-lg">A classic rubber duck that brings joy to bath time.</p>
+                <p>$9.99</p>
+                <select id="quantity" name="quantity"></select>
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+            </div>
+            <div class="border p-4 bg-white rounded-md">
+                <img src="images/French_Vanilla_Bottle.webp" alt="" class="w-full">
+                <h1 class="text-2xl font-bold underline">French Vanilla Bottle</h1>
+                <p class="text-lg">A delightful bottle of French vanilla fragrance.</p>
+                <p>$19.99</p>
+                <select id="quantity" name="quantity"></select> 
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+            </div>
+            <div></div>
+        </div>
+    </body>
+</html>
