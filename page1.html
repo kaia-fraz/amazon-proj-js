@@ -32,7 +32,6 @@
                 <h1 class="text-2xl font-bold underline">Naturally Distressed Jeans</h1>
                 <p class="text-lg">Stylish and comfortable jeans with a naturally distressed finish.</p>
                 <p>$49.99</p>
-
                 <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none" onclick="addToCart({ id: 1, name: 'Naturally Distressed Jeans', price: 49.99, quantity: parseInt(document.getElementById('quantity').value) || 1 })">Add to Cart</button>
                 <select id="quantity" name="quantity">
                     <option value="1">1</option>
@@ -46,24 +45,39 @@
                 <h1 class="text-2xl font-bold underline">Wooden Wagon with Sacks</h1>
                 <p class="text-lg">A charming wooden wagon filled with decorative sacks.</p>
                 <p>$29.99</p>
-                <select id="quantity" name="quantity"></select>
-                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none" onclick="addToCart({ id: 2, name: 'Wooden Wagon with Sacks', price: 29.99, quantity: parseInt(document.getElementById('quantity').value) || 1 })">Add to Cart</button>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
             </div>
             <div class="border p-4 bg-white rounded-md">
                 <img src="images/RDKY-Classic-Yellow-Rubber-Duck_web_2000x2000.jpg" alt="" class="w-full">
                 <h1 class="text-2xl font-bold underline">Classic Yellow Rubber Duck</h1>
                 <p class="text-lg">A classic rubber duck that brings joy to bath time.</p>
                 <p>$9.99</p>
-                <select id="quantity" name="quantity"></select>
-                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none" onclick="addToCart({ id: 3, name: 'Classic Yellow Rubber Duck', price: 9.99, quantity: parseInt(document.getElementById('quantity').value) || 1 })">Add to Cart</button>
             </div>
             <div class="border p-4 bg-white rounded-md">
                 <img src="images/French_Vanilla_Bottle.webp" alt="" class="w-full">
                 <h1 class="text-2xl font-bold underline">French Vanilla Bottle</h1>
                 <p class="text-lg">A delightful bottle of French vanilla fragrance.</p>
                 <p>$19.99</p>
-                <select id="quantity" name="quantity"></select> 
-                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none" onclick="addToCart({ id: 4, name: 'French Vanilla Bottle', price: 19.99, quantity: parseInt(document.getElementById('quantity').value) || 1 })">Add to Cart</button>
             </div>
             <div></div>
         </div>
