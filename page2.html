@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="cart.js" defer></script>
+    </head>
+    <header class="flex bg-blue-950 text-white p-5 items-center justify-between">
+            <img src="images/Amazon-Logo-White-PNG-Image.png" alt="Amazon Logo" class="h-14 pr-4">
+            <input type="text" class="w-screen mt-4 p-2 rounded-l-md focus:outline-none flex-grow">
+            <button class="bg-orange-400 text-black mt-4 p-2 rounded-r-md focus:outline-none flex-grow ">Go</button>
+            <nav class="mt-4">
+                <ul class="flex space-x-4 pl-4">
+                    <li><a href="#" class="hover:underline hover:text-orange-400">Your Account</a></li>
+                    <li><a href="#" class="hover:underline hover:text-orange-400">Help</a></li>
+                    <li><button id="cart" class="relative hover:underline hover:text-orange-400">Cart<span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">0</span></button></li>
+                </ul>
+            </nav>
+        </header>
+         <body class="bg-gray-100">
+        <div class="bg-white shadow-md mb-8 p-2">
+            <h1 class="text-4xl font-bold text-center p-8">Your Shopping Cart</h1>
+            <p class="text-lg text-center mb-8">Review the items in your cart before proceeding to checkout.</p>
+         </body>

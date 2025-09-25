@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="Product.js" defer></script>
+        <script src="cart.js" defer></script>
     </head>
     <header class="flex bg-blue-950 text-white p-5 items-center justify-between">
             <img src="images/Amazon-Logo-White-PNG-Image.png" alt="Amazon Logo" class="h-14 pr-4">
@@ -14,7 +16,7 @@
                 <ul class="flex space-x-4 pl-4">
                     <li><a href="#" class="hover:underline hover:text-orange-400">Your Account</a></li>
                     <li><a href="#" class="hover:underline hover:text-orange-400">Help</a></li>
-                    <li><a href="#" class="hover:underline hover:text-orange-400">Cart</a></li>
+                    <li><a href="page2.html" id="cart" class="relative hover:underline hover:text-orange-400">Cart<span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">0</span></a></li>
                 </ul>
             </nav>
         </header>
@@ -30,8 +32,14 @@
                 <h1 class="text-2xl font-bold underline">Naturally Distressed Jeans</h1>
                 <p class="text-lg">Stylish and comfortable jeans with a naturally distressed finish.</p>
                 <p>$49.99</p>
-                <select id="quantity" name="quantity"></select>
-                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none">Add to Cart</button>
+
+                <button class="bg-orange-400 text-black mt-4 p-2 rounded-md focus:outline-none" onclick="addToCart({ id: 1, name: 'Naturally Distressed Jeans', price: 49.99, quantity: parseInt(document.getElementById('quantity').value) || 1 })">Add to Cart</button>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
             </div>
             <div class="border p-4 bg-white rounded-md">
                 <img src="images/wooden-wagon-with-sacks-10x15x10-cm0x15x10-cm.jpg" alt="" class="w-full">
